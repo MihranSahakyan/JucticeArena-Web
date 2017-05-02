@@ -1,0 +1,67 @@
+body {
+  margin: 0; }
+
+#wrapper {
+  font-family: Raleway; }
+  #wrapper .box {
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center; }
+  #wrapper #left-part {
+    background-color: #fff;
+    position: fixed;
+    top: 0; }
+    #wrapper #left-part .brand {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 45%; }
+      #wrapper #left-part .brand video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-75%) translateY(-50%);
+        background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+        background-size: cover;
+        transition: 1s opacity; }
+      #wrapper #left-part .brand #logo {
+        font-size: 3em;
+        text-decoration: none;
+        color: #bfbfbf; }
+        #wrapper #left-part .brand #logo #unique {
+          color: #6458C3; }
+      #wrapper #left-part .brand #truth {
+        font-family: initial;
+        font-style: italic;
+        font-size: 16px;
+        color: #e2e1e1; }
+  #wrapper #right-part {
+    background-color: #6458C3;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    #wrapper #right-part .textarea {
+      width: 85%;
+      margin: 0 auto;
+      color: #bfbfbf;
+      text-align: left; }
+      #wrapper #right-part .textarea h1 {
+        margin-bottom: -7px;
+        color: #e2e1e1; }
+      #wrapper #right-part .textarea p {
+        line-height: 1.7; }
+      #wrapper #right-part .textarea ul li {
+        padding-top: 5px; }
+      #wrapper #right-part .textarea .footer {
+        position: relative;
+        top: 10px; }
+        #wrapper #right-part .textarea .footer a {
+          color: #ff6197; }
+
+/*# sourceMappingURL=style.css.map */
