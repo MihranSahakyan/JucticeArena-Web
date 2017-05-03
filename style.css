@@ -5,11 +5,11 @@ body {
   font-family: Raleway; }
   #wrapper .box {
     float: left;
-    height: 100%;
     width: 50%;
     text-align: center; }
   #wrapper #left-part {
     background-color: #fff;
+    height: 100%;
     position: fixed;
     top: 0; }
     #wrapper #left-part .brand {
@@ -45,10 +45,11 @@ body {
     background-color: #6458C3;
     position: absolute;
     top: 0;
-    right: 0; }
+    left: 50%;
+    min-height: 100%; }
     #wrapper #right-part .textarea {
       width: 85%;
-      margin: 0 auto;
+      margin: -5px auto;
       color: #bfbfbf;
       text-align: left; }
       #wrapper #right-part .textarea h1 {
@@ -58,9 +59,11 @@ body {
         line-height: 1.7; }
       #wrapper #right-part .textarea ul li {
         padding-top: 5px; }
+      #wrapper #right-part .textarea ul #unique {
+        color: #fff; }
       #wrapper #right-part .textarea .footer {
         position: relative;
-        top: 10px; }
+        top: -8px; }
         #wrapper #right-part .textarea .footer a {
           color: #ff6197; }
 

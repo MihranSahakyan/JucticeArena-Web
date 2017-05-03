@@ -5,12 +5,12 @@ body {
 	font-family: Raleway;
 	.box {
 		float: left;
-		height: 100%;
 		width: 50%;
 		text-align: center;
 	}
 	#left-part {
 		background-color: #fff;
+		height: 100%;
 		position: fixed;
 		top: 0;
 		.brand {
@@ -52,11 +52,12 @@ body {
 	#right-part {
 		background-color: #6458C3;
 		position: absolute;
-    	top: 0;
-    	right: 0;
+		top: 0;
+    	left: 50%;
+		min-height: 100%;
     	.textarea {
     		width: 85%;
-    		margin: 0 auto;
+    		margin: -5px auto;
     		color: #bfbfbf;
     		text-align: left;
     		h1 {
@@ -70,10 +71,13 @@ body {
     			li {
     				padding-top: 5px; 
     			}
+    			#unique {
+    				color: #fff;
+    			}
     		}
     		.footer {
     			position: relative;
-    			top: 10px;
+    			top: -8px;
     			a {
     				color: #ff6197;
     			}
