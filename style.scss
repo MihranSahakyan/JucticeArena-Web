@@ -8,47 +8,7 @@ body {
 		width: 50%;
 		text-align: center;
 	}
-	#left-part {
-		background-color: #fff;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		.brand {
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 45%;
 
-			video { 
-			    position: fixed;
-			    top: 50%;
-			    left: 50%;
-			    min-width: 100%;
-			    min-height: 100%;
-			    width: auto;
-			    height: auto;
-			    z-index: -100;
-			    transform: translateX(-75%) translateY(-50%);
-			 	background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-			  	background-size: cover;
-			  	transition: 1s opacity;
-			}
-			#logo {
-				font-size: 3em;
-				text-decoration: none;
-				color: rgb(191, 191, 191);
-				#unique {
-					color: #6458C3;
-				}
-			}
-			#truth {
-				font-family: initial;
-				font-style: italic;
-				font-size: 16px;
-				color: #e2e1e1;
-			}
-		}
-	}
 	#right-part {
 		background-color: #6458C3;
 		position: absolute;
@@ -83,5 +43,78 @@ body {
     			}
     		}
     	}
+	}
+
+	#left-part {
+		background-color: #fff;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		.juctice {
+			width: 400px;
+			margin: 45% auto;
+			position: relative;
+			.logo {
+				font-size: 3em;
+				text-decoration: none;
+				color: rgb(191, 191, 191);
+				#unique {
+					color: #6458C3;
+				}
+			}
+			#truth {
+				font-family: initial;
+				font-style: italic;
+				font-size: 16px;
+				color: #e2e1e1;
+			}
+		}
+		.layer {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 3;
+			transition: .5s ease;
+			cursor: pointer;
+			opacity: 0;
+			.heroes {
+				font-size: 3em;
+				position: relative;
+				top: 47%;
+			}			
+		}
+		.layer:hover {
+			background: #303F9F;
+			opacity: 1;
+			/*transform: rotateY(180deg);*/
+		}
+
+		.heroes_display_none {
+			opacity: 0;
+		}
+		.prop {
+			transform: rotateY(180deg); opacity: 1; background-color: #303F9F;
+		}
+
+		.brand {
+			z-index: 2;
+
+			video { 
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    min-width: 100%;
+			    min-height: 100%;
+			    width: auto;
+			    height: auto;
+			    z-index: -100;
+			    transform: translateX(-75%) translateY(-50%);
+			  	background-size: cover;
+			  	transition: 1s opacity;
+			}
+		}
 	}
 }

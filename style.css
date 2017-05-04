@@ -7,40 +7,6 @@ body {
     float: left;
     width: 50%;
     text-align: center; }
-  #wrapper #left-part {
-    background-color: #fff;
-    height: 100%;
-    position: fixed;
-    top: 0; }
-    #wrapper #left-part .brand {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 45%; }
-      #wrapper #left-part .brand video {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        transform: translateX(-75%) translateY(-50%);
-        background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
-        background-size: cover;
-        transition: 1s opacity; }
-      #wrapper #left-part .brand #logo {
-        font-size: 3em;
-        text-decoration: none;
-        color: #bfbfbf; }
-        #wrapper #left-part .brand #logo #unique {
-          color: #6458C3; }
-      #wrapper #left-part .brand #truth {
-        font-family: initial;
-        font-style: italic;
-        font-size: 16px;
-        color: #e2e1e1; }
   #wrapper #right-part {
     background-color: #6458C3;
     position: absolute;
@@ -66,5 +32,64 @@ body {
         top: -8px; }
         #wrapper #right-part .textarea .footer a {
           color: #ff6197; }
+  #wrapper #left-part {
+    background-color: #fff;
+    height: 100%;
+    position: fixed;
+    top: 0; }
+    #wrapper #left-part .juctice {
+      width: 400px;
+      margin: 45% auto;
+      position: relative; }
+      #wrapper #left-part .juctice .logo {
+        font-size: 3em;
+        text-decoration: none;
+        color: #bfbfbf; }
+        #wrapper #left-part .juctice .logo #unique {
+          color: #6458C3; }
+      #wrapper #left-part .juctice #truth {
+        font-family: initial;
+        font-style: italic;
+        font-size: 16px;
+        color: #e2e1e1; }
+    #wrapper #left-part .layer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 3;
+      transition: .5s ease;
+      cursor: pointer;
+      opacity: 0; }
+      #wrapper #left-part .layer .heroes {
+        font-size: 3em;
+        position: relative;
+        top: 47%; }
+    #wrapper #left-part .layer:hover {
+      background: #303F9F;
+      opacity: 1;
+      /*transform: rotateY(180deg);*/ }
+    #wrapper #left-part .heroes_display_none {
+      opacity: 0; }
+    #wrapper #left-part .prop {
+      transform: rotateY(180deg);
+      opacity: 1;
+      background-color: #303F9F; }
+    #wrapper #left-part .brand {
+      z-index: 2; }
+      #wrapper #left-part .brand video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-75%) translateY(-50%);
+        background-size: cover;
+        transition: 1s opacity; }
 
 /*# sourceMappingURL=style.css.map */
